@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617549905416,
+  "lastUpdate": 1617549912674,
   "repoUrl": "https://github.com/bikeshedder/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -189,6 +189,62 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 743200,
             "range": "± 230554",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "sync_rwlock": [
+      {
+        "commit": {
+          "author": {
+            "email": "ldm2993593805@163.com",
+            "name": "Donough Liu",
+            "username": "ldm0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b42f21ec3e212ace25331d0c13889a45769e6006",
+          "message": "doc: fix incorrect link in doc (#3670)",
+          "timestamp": "2021-04-01T15:24:29+02:00",
+          "tree_id": "fb0d40136a86ef56c7986472a255b8cea4cb3d83",
+          "url": "https://github.com/bikeshedder/tokio/commit/b42f21ec3e212ace25331d0c13889a45769e6006"
+        },
+        "date": 1617549911636,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 923,
+            "range": "± 195",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 16018,
+            "range": "± 4968",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 986,
+            "range": "± 248",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15653,
+            "range": "± 5296",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 516,
+            "range": "± 81",
             "unit": "ns/iter"
           }
         ]

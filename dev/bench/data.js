@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617549871676,
+  "lastUpdate": 1617549905416,
   "repoUrl": "https://github.com/bikeshedder/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -103,6 +103,92 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1118,
             "range": "± 131",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "sync_mpsc": [
+      {
+        "commit": {
+          "author": {
+            "email": "ldm2993593805@163.com",
+            "name": "Donough Liu",
+            "username": "ldm0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b42f21ec3e212ace25331d0c13889a45769e6006",
+          "message": "doc: fix incorrect link in doc (#3670)",
+          "timestamp": "2021-04-01T15:24:29+02:00",
+          "tree_id": "fb0d40136a86ef56c7986472a255b8cea4cb3d83",
+          "url": "https://github.com/bikeshedder/tokio/commit/b42f21ec3e212ace25331d0c13889a45769e6006"
+        },
+        "date": 1617549904757,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6984864,
+            "range": "± 2865090",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6412601,
+            "range": "± 1876937",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6958799,
+            "range": "± 2693945",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 797,
+            "range": "± 180",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 800,
+            "range": "± 156",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 784,
+            "range": "± 164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 145208,
+            "range": "± 26794",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1707,
+            "range": "± 553",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1122850,
+            "range": "± 405512",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 743200,
+            "range": "± 230554",
             "unit": "ns/iter"
           }
         ]

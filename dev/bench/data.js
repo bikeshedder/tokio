@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617549912674,
+  "lastUpdate": 1617787613999,
   "repoUrl": "https://github.com/bikeshedder/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -47,6 +47,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18476014,
             "range": "± 3635482",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@lucaszanella.com",
+            "name": "Lucas Zanela",
+            "username": "lucaszanella"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0074b963b8ef02308e6367c8edd5c9d210c9038d",
+          "message": "doc: add features = \"full\" to readme (#3680)",
+          "timestamp": "2021-04-06T11:03:21+02:00",
+          "tree_id": "311075a61ef9a0e34f66c0e8b7b2004beab39280",
+          "url": "https://github.com/bikeshedder/tokio/commit/0074b963b8ef02308e6367c8edd5c9d210c9038d"
+        },
+        "date": 1617787612907,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 164861,
+            "range": "± 23478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 609357,
+            "range": "± 61018",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4299450,
+            "range": "± 1018083",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18157305,
+            "range": "± 3288246",
             "unit": "ns/iter"
           }
         ]

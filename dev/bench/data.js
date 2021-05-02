@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619951449842,
+  "lastUpdate": 1619951454635,
   "repoUrl": "https://github.com/bikeshedder/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -95,6 +95,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18157305,
             "range": "± 3288246",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "russell.r.cohen@gmail.com",
+            "name": "Russell Cohen",
+            "username": "rcoh"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "14bb2f624f1ac3d440dd302219a48e9e8e926b50",
+          "message": "io: add write_all_buf to AsyncWriteExt (#3737)",
+          "timestamp": "2021-05-01T20:54:38+02:00",
+          "tree_id": "43242f7e908bb52a3a7fd59d83e191839b661ece",
+          "url": "https://github.com/bikeshedder/tokio/commit/14bb2f624f1ac3d440dd302219a48e9e8e926b50"
+        },
+        "date": 1619951446036,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 182805,
+            "range": "± 24339",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 679104,
+            "range": "± 100550",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4333319,
+            "range": "± 818269",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19910240,
+            "range": "± 2940605",
             "unit": "ns/iter"
           }
         ]
